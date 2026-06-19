@@ -1,0 +1,12 @@
+$kind: collection
+name: UserAPI - Integration Test Suite
+variables:
+  baseUrl: /
+auth:
+  - id: fbbb26f8-8671-47a5-9528-02eb6d48f127
+    type: apikey
+    name: apikey auth
+    credentials:
+      key: X-API-Key
+      value: "{{apiKey}}"
+      in: header

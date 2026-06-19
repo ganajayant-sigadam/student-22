@@ -1,7 +1,18 @@
-# Use this workspace to collaborate
 workspace:
-  id: 3ac438c6-ebf2-4539-9862-18551374cc53
-
+  id: bf92384f-b897-4eaa-a9dc-b434bcd2da53
 localResources:
   specs:
     - ../contract/index.yaml
+  collections:
+    - ../postman/collections/UserAPI - Integration Test Suite
+  environments:
+    - ../postman/environments/Local.environment.yaml
+    - ../postman/environments/Production.environment.yaml
+cloudResources:
+  collections:
+    ../postman/collections/UserAPI - Integration Test Suite: 55929740-731a03ae-d15c-4d6c-832e-57e7a7178e70
+  environments:
+    ../postman/environments/Local.environment.yaml: 55929740-c6a07178-804f-4226-b578-b26a3945e295
+    ../postman/environments/Production.environment.yaml: 55929740-8b51f89e-b004-4689-b1f6-700658f9c4d8
+  specs:
+    ../contract/index.yaml: 0b2272bd-75c9-4883-aacd-90ec19525612
